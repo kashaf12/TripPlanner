@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Invite and Earn"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:paddingTop="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INVITE YOUR FRIENDS"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with invite code"
+                android:textSize="10dp"
+                android:textColor="#b9b6b6"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"/>
+          <TextView
+                android:id="@+id/invitecode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="KASH001"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textColor="#ff0000"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="invite your friends. They get free TRIP PLANNER Money worth ₹500 on sign up.You get ₹200 on their sign up and ₹800 more after their first stay! "
+                android:textSize="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textColor="#b9b6b6"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp">
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_share_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

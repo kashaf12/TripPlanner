@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#e9681e</color>
+    <color name="colorAccent">#880E4F</color>
+    <color name="grey">#898686</color>
+    <color name="green">#04ec04</color>
+
+    <color name="first_slide_background">#e9681e</color>
+    <color name="first_slide_buttons">#880E4F</color>
+
+    <color name="second_slide_background">#e9681e</color>
+    <color name="second_slide_buttons">#880E4F</color>
+
+    <color name="fourth_slide_background">#e9681e</color>
+    <color name="fourth_slide_buttons">#880E4F</color>
+
+    <!--Splash Screen-->
+
+</resources>

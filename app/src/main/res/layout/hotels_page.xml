@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/purple_royal_bedroom_white_columns_crystal_chandelier_turfted_headboard"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false"
+            >
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, Kashaf"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="120dp"/>
+
+            <Button
+                android:id="@+id/searchbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                   android:layout_marginBottom="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:paddingStart="10dp"
+                android:text="where are you travelling ?"
+                android:textColor="#938f8f"
+
+                android:background="@drawable/button_search"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_overlapTop="40dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:background="#FFFF"
+                android:padding="5dp">
+                <LinearLayout
+                    android:id="@+id/sultanpur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:background="@drawable/gpscircle"
+                    android:id="@+id/nearby"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_action_location_2"
+                    app:border_width="1dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:text="Nearby"
+                    android:paddingTop="0dp"
+                    android:textColor="#938f8f"
+                    android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lucknow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/charbagh"
+                            app:border_width="1dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textAlignment="center"
+                            android:text="Lucknow"
+                            android:paddingTop="0dp"
+                            android:textColor="#938f8f"
+                            android:layout_gravity="bottom|center_horizontal"/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/kanpur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/kanpur_city"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="Kanpur"
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bengaluru"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bangalore"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="Bengaluru"
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/pune"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/pune_background_image_768x768"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="Pune"
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/delhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/delhi_red_fort"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="Delhi"
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/agra"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/private_tour_day_trip_to_agra_from_delhi_including_taj_mahal_agra_in_new_delhi_412815"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="Agra"
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/searchlocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_action_arrow_right"
+                        app:border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAlignment="center"
+                        android:text="More "
+                        android:paddingTop="0dp"
+                        android:textColor="#938f8f"
+                        android:layout_gravity="bottom|center_horizontal"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="vertical"
+                android:background="#FFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#938f8f"
+                    android:text="Recommended trip"
+                    android:padding="5dp"/>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="#FFF"
+
+                >
+                <LinearLayout
+                    android:id="@+id/ad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hip_hop_closet_coupon_code"
+                    android:background="#FFFF"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ad2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/asd"
+                        android:background="#FFFF"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ad3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/airasia_school_holidays_promotion_2017"
+                        android:background="#FFFF"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"/>
+
+
+                </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:background="#FFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#938f8f"
+                        android:text="Today's Deal"
+                        android:padding="5dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="132dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="132dp"
+                            android:orientation="horizontal"
+                            android:background="#FFF"
+
+                            >
+                            <LinearLayout
+                                android:id="@+id/ad4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/kabayan_monumento_premium_room_promo"
+                                    android:background="#FFFF"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"/>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ad5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/asdasd"
+                                    android:background="#FFFF"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"/>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ad6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/download"
+                                    android:background="#FFFF"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#938f8f"
+                android:text="Deal for you"
+                android:padding="5dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="#FFF"
+
+                    >
+                    <LinearLayout
+                        android:id="@+id/ad7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/dubai"
+                            android:background="#FFFF"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ad8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/untitlmaldivesed_1"
+                            android:background="#FFFF"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ad9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:orientation="vertical"
+                       >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/duba"
+                            android:background="#FFFF"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#938f8f"
+                android:text="we are also on whatsapp"
+                android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFF"
+
+                    >
+                    <LinearLayout
+                        android:id="@+id/werwhatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center|center_horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFF"
+                            android:src="@drawable/whatsapp_bannerv02" />
+                    </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginTop="2dp"
+                    >
+               <ImageButton
+                   android:id="@+id/profile"
+                   android:paddingTop="2dp"
+                   android:paddingEnd="15dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="#FFFFFF"
+                   android:src="@drawable/ic_perm_identity_black_36dp"
+                   android:layout_alignParentEnd="true"/>
+                    <ImageButton
+                        android:id="@+id/wallet"
+                        android:paddingTop="2dp"
+                        android:paddingStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_card_travel_black_36dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

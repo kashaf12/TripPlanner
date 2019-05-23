@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sheetstyle"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A 6-Digit Verification Code will be sent via SMS to verify your mobile number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        >
+<com.hbb20.CountryCodePicker
+        android:id="@+id/ccp_getFullNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:ccp_hintExampleNumber="true"
+        app:ccp_hintExampleNumberType="FIXED_LINE"
+        app:ccp_selectionMemoryTag="getFullNumber"
+        app:ccp_countryPreference="US,IN,NZ"
+        app:ccpDialog_backgroundColor="#ffffff"
+       />
+    <EditText
+        android:id="@+id/editText_getCarrierNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="Mobile Number     "
+        android:inputType="phone"
+        android:singleLine="true" />
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendCode"
+            android:background="@drawable/button_green"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Verify"
+     />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           android:orientation="horizontal"
+
+            android:layout_gravity="center"
+            >
+        <ImageView
+            android:id="@+id/img_validity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/tv_validity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/circular_progress_bar"
+                   />
+            </LinearLayout>
+
+    </LinearLayout>
+

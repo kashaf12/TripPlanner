@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "556860104864",
+    "firebase_url": "https://tripplanner-b51c5.firebaseio.com",
+    "project_id": "tripplanner-b51c5",
+    "storage_bucket": "tripplanner-b51c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556860104864:android:fe076f99126b8c45",
+        "android_client_info": {
+          "package_name": "com.kfstudio.tripplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556860104864-0cp9d2dkb1f981emvggblfgm3n11bu9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kfstudio.tripplanner",
+            "certificate_hash": "bba9f2ff3aeafb5a35257f8831c13e39e32d7604"
+          }
+        },
+        {
+          "client_id": "556860104864-9ba8hrorrqm1cnb8l2ronj54aooi8ai5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kfstudio.tripplanner",
+            "certificate_hash": "a612c6a20331558ad7230feb800ca0bea54d92ec"
+          }
+        },
+        {
+          "client_id": "556860104864-p1u3lhdqju2jgbmaulao1j3m2u9pi1t2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kfstudio.tripplanner",
+            "certificate_hash": "2a5778816335a4f0f2bc8f63861a6bb4964d8d7d"
+          }
+        },
+        {
+          "client_id": "556860104864-jdnss9mbrl24fr8e3kg48hjv7m4o4cl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kfstudio.tripplanner",
+            "certificate_hash": "b3abd40ba28289a669b6fa94ddf0cd761fe36958"
+          }
+        },
+        {
+          "client_id": "556860104864-qlfla480mqjomaphfa6qq04siccul53m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFhWEj0PPKD2UCcQOXoXz4FNWslKIckD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556860104864-qlfla480mqjomaphfa6qq04siccul53m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
